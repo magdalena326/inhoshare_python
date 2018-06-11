@@ -50,3 +50,34 @@ for kategoria_zakupow in zakupy_czerwiec:
 
 zakupy_lipiec[1].append("jablka")
 print(zakupy_lipiec)
+
+
+my_list = [[1, 2, 3], [4, 5, 6]]
+new_list = my_list[1][0:2]
+print(new_list)
+
+print("Names", names)
+add_names = ["piotr", "kasia"]
+names.extend(add_names)
+print("Add names", names)
+
+add_more_names = ["ula"]
+names_extended = names + add_more_names
+print("Names extended", names_extended)
+
+name_to_remove = "anna"
+names_extended.remove(name_to_remove)
+print("After removal", names)
+
+removed_name = names_extended.pop(-1)
+print(removed_name)
+
+########################################
+
+duplicates = [1, 2, 5, 1, 4, 7, 7, 7]
+without_duplicates = []
+for element in duplicates:
+    if element not in without_duplicates:
+        without_duplicates.append(element)
+print("Without duplicates", without_duplicates)
+
