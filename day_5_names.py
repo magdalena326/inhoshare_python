@@ -30,5 +30,23 @@ for name in names:
 
 #listy złożone
 
+import copy
+
+chemia = ["mydlo", "pasta", "krem", "lakier", "farba"]
+owoce = ["truskawki", "maliny"]
+zakupy_czerwiec = [chemia, owoce]
+#print("Zakupy czerwiec:", zakupy_czerwiec)
+
+zakupy_lipiec = copy.deepcopy(zakupy_czerwiec)
+#print("Zakupy lipiec: ", zakupy_lipiec)
+print(zakupy_lipiec)
+print(zakupy_czerwiec)
 
 
+for kategoria_zakupow in zakupy_czerwiec:
+    for towar in kategoria_zakupow:
+        print(towar)
+    print()
+
+zakupy_lipiec[1].append("jablka")
+print(zakupy_lipiec)
